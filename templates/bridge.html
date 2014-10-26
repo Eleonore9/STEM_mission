@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #333;
+      text-align: center;
+      color: white;
+      font-family: sans-serif;
+      font-size: 30px;
+      }
+
+      button {
+      font-size: 10px;
+      font-family: Lucida Sans Typewriter;
+}
+
+      
+
+    </style>
+  </head>
+  <body>
+    <div id="logo">
+      <img src = "../static/img/logo_name_333.png" style="width:90%;
+        height:10%; margin-left: 2em; margin-right:auto; display: block">
+      </div>
+
+      Welcome to the Bridge-Build Mission 
+<br>
+<br>
+
+
+   
+      
+
+<br>
+
+    
+    <div id="container" style="background-image:
+			       url('../static/img/bridge.gif');
+			       background-repeat: no-repeat;
+			       margin-left: auto; margin-right: auto;
+			       background-position: center top;">
+
+    </div>
+
+<br>
+
+<button type="button">Click Me When You're Done!</button>
+
+    <script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v5.0.2.min.js"></script>
+    <script defer="defer">
+      function drawImage(imageObj) { 
+        var stage = new Kinetic.Stage({
+          container: "container",
+          width:2000,
+          height: 800
+        });
+
+
+       var layer = new Kinetic.Layer();
+
+
+        // triangle
+        var triangle1 = new Kinetic.Image({
+          image: imageObj,
+          x: 200,
+          y:400,
+          draggable: true
+        });
+
+        // add cursor styling
+        triangle1.on('mouseover', function() {
+          document.body.style.cursor = 'pointer';
+        });
+        triangle1.on('mouseout', function() {
+          document.body.style.cursor = 'default';
+        });
+
+        var triangle2 = new Kinetic.Image({
+          image: imageObj,
+          x: 300,
+          y:400,
+          draggable: true
+        });
+
+        // add cursor styling
+        triangle2.on('mouseover', function() {
+          document.body.style.cursor = 'pointer';
+        });
+        triangle2.on('mouseout', function() {
+          document.body.style.cursor = 'default';
+        });
+
+
+        var triangle3 = new Kinetic.Image({
+          image: imageObj,
+          x: 400,
+          y:400,
+          draggable: true
+        });
+
+        // add cursor styling
+        triangle3.on('mouseover', function() {
+          document.body.style.cursor = 'pointer';
+        });
+        triangle3.on('mouseout', function() {
+          document.body.style.cursor = 'default';
+        });
+
+
+        layer.add(triangle1);
+        layer.add(triangle2);
+        layer.add(triangle3);
+
+        stage.add(layer);
+
+      }
+
+      var imageObj = new Image();
+      imageObj.onload = function() {
+        drawImage(this);
+      };
+
+
+      imageObj.src = '../static/img/triangle_build.gif';
+ 
+
+    </script>
+  </body>
+</html>      
