@@ -3,11 +3,11 @@
 }
 #infobox {
     border:5px solid white;
-    margin-top: 8px;
-    background:#9933FF;
-    color:#FFF;
-    font-family:Lucida Sans Typewriter;
-    font-size:12px;
+    margin-top: 4px;
+    background:#bb23ce;
+    color:#36ce23;
+    font-family:Tw Cen MT;
+    font-size:20px;
     padding: .5em 1em;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -17,6 +17,12 @@
     box-shadow: 0 0 8px #000;
 }
 
-#infobox.h1 {
-    font-size: 20px;
+
+#map {
+    width: 1000px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    position: center;
 }
+
