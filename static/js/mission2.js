@@ -9,13 +9,13 @@ function initialize() {
     sanfran= new google.maps.LatLng(37.7833, -122.4167);
     tokyo = new google.maps.LatLng(35.6895, 139.6917);
     
-     var spanner ='https://raw.githubusercontent.com/Eleonore9/STEM_mission/master/static/img/mechanic2.png';
+     var spanner ='../static/img/colorEngineeravatr.png';
 
-    var chemical='https://raw.githubusercontent.com/Eleonore9/STEM_mission/master/static/img/Lab_icon2.png';
+    var chemical= '../static/img/colorscienceavatar.png';
 
-    var computer= 'http://maps.google.com/mapfiles/kml/pal4/icon37.png';
+    var computer= '../static/img/colortechavatar.png';
 
-    var numbers = 'http://maps.google.com/mapfiles/kml/pal3/icon15.png';
+    var maths = '../static/img/colormathsavatar.png';
 
     var featureOpts = [
     {
@@ -90,7 +90,7 @@ function initialize() {
         map: map,
         position: tokyo,
         visible: true,
-        icon: numbers,
+        icon: maths,
         draggable:true,
         animation: google.maps.Animation.DROP
     });
