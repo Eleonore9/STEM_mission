@@ -4,9 +4,9 @@ function initialize() {
     london = new google.maps.LatLng(51.5056, 0.0756);
     liberia= new google.maps.LatLng(6.3167, 10.8);
     
-    var spanner ='http://maps.google.com/mapfiles/kml/shapes/mechanic.png';
+    var spanner ='../img/mechanic2.png';
     
-    var chemical='http://www.clker.com/cliparts/b/e/a/0/12375604671045299556pitr_Lab_icon_2.svg.thumb.png';
+    var chemical='../img/Lab_icon2.png';
     
     map = new google.maps.Map(document.getElementById("map"), {
          zoom: 1,
