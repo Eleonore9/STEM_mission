@@ -1,4 +1,7 @@
 function initialize() {
+
+    var MY_MAPTYPE_ID = 'custom_style';
+
     var london, liberia, sanfran, tokyo, map, marker, infobox;
     
     london = new google.maps.LatLng(51.5056, 0.0756);
@@ -14,15 +17,49 @@ function initialize() {
 
     var numbers = 'http://maps.google.com/mapfiles/kml/pal3/icon15.png';
 
+    var featureOpts = [
+    {
+      stylers: [
+        { hue: '#8cce23' },
+        { visibility: 'simplified' },
+        { gamma: 0.5 },
+        { weight: 0.5 }
+      ]
+    },
+    {
+      elementType: 'labels',
+      stylers: [
+        { visibility: 'off' }
+      ]
+    },
+    {
+      featureType: 'water',
+      stylers: [
+        { color: '#6623ce' }
+      ]
+    }
+  ];
+
+    var mapOptions = {
+    zoom: 2,
+    center: london,
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+    },
+    mapTypeId: MY_MAPTYPE_ID
+  };
     
+    map = new google.maps.Map(document.getElementById("map"),  mapOptions);
+
+  var styledMapOptions = {
+    name: 'Custom Style'
+  };
+
+  var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+
+  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
     
-    map = new google.maps.Map(document.getElementById("map"), {
-         zoom: 2,
-         center: london,
-         mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
-    
-    marker = new google.maps.Marker({
+  marker = new google.maps.Marker({
         map: map,
         position: london,
         visible: true,
