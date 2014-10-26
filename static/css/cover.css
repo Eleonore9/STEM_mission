@@ -27,6 +27,7 @@ body {
 .site-wrapper-inner {
     display: table-cell;
     vertical-align: top;
+    
 }
 .cover-container {
     margin-left: auto;
@@ -36,6 +37,8 @@ body {
     padding: 30px;
 }
 .masthead-brand {
+    margin-left: 100px;
+    margin-right: auto;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -43,7 +46,7 @@ body {
     display: inline-block;
 }
 .masthead-nav > li + li {
-    margin-left: 20px;
+    margin-left: 100px;
 }
 .masthead-nav > li > a {
     border-bottom: 2px solid transparent;
@@ -66,7 +69,7 @@ body {
     float: left;
 }
 .masthead-nav {
-    float: right;
+    float: center;
 }
 }
 .cover {
@@ -79,7 +82,7 @@ body {
 .mastfoot {
     color: rgba(255, 255, 255, 0.5);
 }
-@media (min-width: 768px) {
+@media (min-width: 78px) {
 .masthead {
     position: fixed;
     top: 0;
@@ -95,8 +98,13 @@ body {
     width: 100%;
 }
 }
-@media (min-width: 992px) {
+@media (min-width: 1500px) {
 .masthead, .mastfoot, .cover-container {
-    width: 700px;
+    width: 1500px;
 }
+}
+
+
+title {
+    text-align: center;
 }

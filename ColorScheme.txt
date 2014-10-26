@@ -2,3 +2,13 @@ Primary 1:#bb23ce
 Primary 2:#36ce23
 Secondary 1:#6623ce
 Secondary 2:#8cce23
+
+
+
+
+Logo:
+Avatars:
+S:
+T:
+E:
+M:
