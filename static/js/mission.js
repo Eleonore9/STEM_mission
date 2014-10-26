@@ -6,15 +6,13 @@ function initialize() {
     sanfran= new google.maps.LatLng(37.7833, -122.4167);
     tokyo = new google.maps.LatLng(35.6895, 139.6917);
     
-    var spanner ='http://maps.google.com/mapfiles/kml/shapes/mechanic.png';
-    
-    var chemical='http://www.clker.com/cliparts/b/e/a/0/12375604671045299556pitr_Lab_icon_2.svg.thumb.png';
+    var spanner ='https://raw.githubusercontent.com/Eleonore9/STEM_mission/master/static/img/mechanic2.png';
+
+    var chemical='https://raw.githubusercontent.com/Eleonore9/STEM_mission/master/static/img/Lab_icon2.png';
 
     var computer= 'http://maps.google.com/mapfiles/kml/pal4/icon37.png';
 
     var numbers = 'http://maps.google.com/mapfiles/kml/pal3/icon15.png';
-
-    
     
     map = new google.maps.Map(document.getElementById("map"), {
          zoom: 2,
