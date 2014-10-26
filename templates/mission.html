@@ -9,7 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mission STEM</title>
     <link href='../static/css/bootstrap.min.css' rel='stylesheet' />
+    <link href='../static/css/cover.css' rel='stylesheet' />
     <link href='../static/css/style.css' rel='stylesheet' />
+    <link href='../static/css/mission.css' rel='stylesheet' />
   
   </head>
   <body>
@@ -18,45 +20,43 @@
         <div class="cover-container">
           <div class="masthead clearfix">
             <div class="inner">
-              <h2 class="masthead-brand">Mission STEM</h2>
+              <h2 class="masthead-brand">Mission: STEM</h2>
+	      <br>
+	      <br>
+	      
               <h3 class="nav masthead-nav">
-                Current mission: <p class="lead"> Ebola Medicine</p>
+                Mission dashboard
               </h3>
             </div>
           </div>
 
 <div id="row">
 <div class="col-md-6">
-<div id="map" style="width:50%; height: 300px"></div>
+<div id="map" style="width:400px; height:400px;"></div>
 </div>
 <div class="col-md-6">
-<p>testing</p>
-<p>testing</p>
+  <div class="dashboard">
+    <h2 style="width:100%;" class="nav masthead-nav">
+        Current mission: <p class="lead"> Bridge</p>
+    </h2>
+    <div class="mission-list">
+      <ul>
+        <li>Get your materials </li>
+        <li>Choose site </li>
+        <li>Build your Bridge!</li>
+      </ul>
+    </div>
+    <div class="score">
+      Your score: <span>0</span>
+    </div>
+  </div>
+
 </div>
 <br style="clear:both;"/>
 </div>
 <br>
 
-InfoBox as an easily customizable replacement for an InfoWindow. Click on the marker to see the infobox generated with custom html &amp; css.
 
-<div class="infobox-wrapper">
-    <div id="infobox">
-        <h1>Choose your Mission:</h1>
-        <li>Get your materials </li>
-        <li>Choose site </li>
-        <li>Build your Bridge!</li>
-        
-</div>
-</div>
-       <div style="width:100%">
-    <a class="projectObj" href="choose_mission.html" >
-        <div class="wrap">
-            <div class="btn btn-lg btn-default">Start the game</div>     
-        </div>
-    </a>
-            <!--  <a href="#" class="btn btn-lg btn-default">Start playing</a> -->
-            </p>
-          </div>
 
 
           <div class="mastfoot">
@@ -67,8 +67,12 @@ InfoBox as an easily customizable replacement for an InfoWindow. Click on the ma
         </div>
       </div>
     </div>
+    <script src="../static/js/controllers.js"></script>
+    <script src="../static/js/jquery-2.0.3.min.js"></script>
+    <script src="../static/js/angular.min.js"></script>
     <script src="../static/js/bootstrap.min.js"></script>
-    <script src="../static/js/mission.js"></script>
+    <script src="../static/js/mission2.js"></script>
+    <script src="../static/js/app.js"></script>
 
   </body>
 </html>
