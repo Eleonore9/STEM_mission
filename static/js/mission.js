@@ -4,9 +4,9 @@ function initialize() {
     london = new google.maps.LatLng(51.5056, 0.0756);
     liberia= new google.maps.LatLng(6.3167, 10.8);
     
-    var spanner ='../img/mechanic2.png';
+    var spanner ='https://raw.githubusercontent.com/Eleonore9/STEM_mission/master/static/img/mechanic2.png';
     
-    var chemical='../img/Lab_icon2.png';
+    var chemical='https://raw.githubusercontent.com/Eleonore9/STEM_mission/master/static/img/Lab_icon2.png';
     
     map = new google.maps.Map(document.getElementById("map"), {
          zoom: 1,
