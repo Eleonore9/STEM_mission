@@ -11,9 +11,9 @@ Color 2:
 Tech Fairy
 Based On:anne-marie imafidon
 Bio:Tech fairy knows all things about the wood wide web and coding. She spends her weekends kicking ass at hackathons and she loves social media too - helping the 
-other fairies to share their creations via her own social network - ***the tree branch**. She is currently working on her own visual programming language to 
+other fairies to share their creations via her own social network - the tree branch. She is currently working on her own visual programming language to 
 help everyone understand how much fun coding can be. 
-Color 1:#FF8000
+Color 1:#
 Color 2:
 
 

@@ -9,6 +9,6 @@ Secondary 2:#8cce23
 Logo:
 Avatars:
 S:
-T:
-E:
-M:
+T:#FF7227, 
+E:#36ce23,#8cce23
+M:#bb23ce,#6623ce
