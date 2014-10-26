@@ -63,28 +63,36 @@ function initialize() {
         map: map,
         position: london,
         visible: true,
-        icon: spanner
+        icon: spanner,
+        draggable:true,
+        animation: google.maps.Animation.BOUNCE
     });
     
     marker2 = new google.maps.Marker({
         map: map,
         position: liberia,
         visible: true,
-        icon: chemical
+        icon: chemical,
+        draggable:true,
+        animation: google.maps.Animation.DROP
     });
 
     marker3 = new google.maps.Marker({
         map: map,
         position: sanfran,
         visible: true,
-        icon: computer
+        icon: computer,
+        draggable:true,
+        animation: google.maps.Animation.DROP
     });
 
     marker4 = new google.maps.Marker({
         map: map,
         position: tokyo,
         visible: true,
-        icon: numbers
+        icon: numbers,
+        draggable:true,
+        animation: google.maps.Animation.DROP
     });
 
     infobox = new InfoBox({
@@ -110,4 +118,15 @@ function initialize() {
         map.panTo(loc);
     });
 }
+
+function toggleBounce() {
+
+  if (marker.getAnimation() != null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+
+
 google.maps.event.addDomListener(window, 'load', initialize);
