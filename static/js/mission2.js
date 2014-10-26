@@ -9,13 +9,13 @@ function initialize() {
     sanfran= new google.maps.LatLng(37.7833, -122.4167);
     tokyo = new google.maps.LatLng(35.6895, 139.6917);
     
-     var spanner ='../static/img/colorEngineeravatr.png';
+    var spanner ='../static/img/engineer.gif';
 
-    var chemical= '../static/img/colorscienceavatar.png';
+    var chemical= '../static/img/science.gif';
 
-    var computer= '../static/img/colortechavatar.png';
+    var computer= '../static/img/tech.gif';
 
-    var maths = '../static/img/colormathsavatar.png';
+    var maths = '../static/img/maths.gif';
 
     var featureOpts = [
     {
